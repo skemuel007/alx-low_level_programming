@@ -22,7 +22,7 @@ int main(void)
 				if (d1 != d2 && d1 < d2 && d2 != d3 && d2 < d3)
 				{
 					putchar(d1 + 48);
-					puthcar(d2 + 48);
+					putchar(d2 + 48);
 					putchar(d3 + 48);
 
 					if (d1 + d2 + d3 != 24)
@@ -31,9 +31,9 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				d3++
+				d3++;
 			}
-			d2++
+			d2++;
 		}
 		d1++;
 	}
