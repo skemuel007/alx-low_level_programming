@@ -15,7 +15,7 @@ int main(void)
 		putchar(num);
 
 		if (num == 57)
-			digit += 39;
+			num += 39;
 		++num;
 	}
 
