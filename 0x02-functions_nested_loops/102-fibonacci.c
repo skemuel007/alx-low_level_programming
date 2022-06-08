@@ -13,7 +13,7 @@ int main(void)
 	while (counter < 50)
 	{
 		sum = fib1 + fib2;
-		print("%lu", sum);
+		printf("%lu", sum);
 
 		fib1 = fib2;
 		fib2 = sum;
