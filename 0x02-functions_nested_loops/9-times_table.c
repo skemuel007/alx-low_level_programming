@@ -18,7 +18,7 @@ void times_table(void)
 			product = counter * multi;
 
 			if (product <= 9)
-				_putchar(' ')
+				_putchar(' ');
 			else
 				_putchar((product / 10) + 48);
 
