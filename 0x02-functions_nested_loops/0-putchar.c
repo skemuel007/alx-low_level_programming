@@ -11,11 +11,11 @@ int main(void)
 	int lengthOfChStr = sizeof(putChStr) / sizeof(putChStr[0]);
 
 	int i;
-	for(i = 0; i < lengthOfChStr - 1; i++)
+	for (i = 0; i < lengthOfChStr - 1; i++)
 	{
 		_putchar(putChStr[i]);
 	}
 	_putchar('\n');
-	
+
 	return (0);
 }
