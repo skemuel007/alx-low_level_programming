@@ -4,7 +4,7 @@
  * _isalpha - isalpha function
  * @c: takes an argument of c
  * Description: This function prints alphabets
- * Returns: 1 if successful and 0 if not
+ * Return: 1 if successful and 0 if not
  */
 int _isalpha(int c)
 {
