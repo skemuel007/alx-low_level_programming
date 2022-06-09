@@ -9,10 +9,9 @@ int main(void)
 {
 	int i;
 
-	for (i = -2; i < 2; i++)
-	{
-		positive_or_negatvie(i);
-	}
+	i = 98 % 2;
+
+	positive_or_negative(i);
 
 	return (0);
 }
