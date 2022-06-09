@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * convert_day - converts days of the month to day of the year, without accounting
- * for leap year
+ * convert_day - converts days of the month to day of the year,
+ * without accounting for leap year
  * @month: month in integer
  * @day: day of the month in integer
  * Return: day of the year
@@ -47,7 +47,6 @@ int convert_day(int month, int day)
 			break;
 		default:
 			break;
-			
 	}
 	return (day);
 }
