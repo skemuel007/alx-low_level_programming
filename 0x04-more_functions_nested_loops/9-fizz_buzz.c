@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - Function name
+ * main - Function name
  * Description: Prints fizz buzz
- * Returns: void
+ * Return: 0 if the program runs successfully
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -29,4 +29,6 @@ void fizz_buzz(void)
 		else
 			printf("\n");
 	}
+
+	return (0)
 }
