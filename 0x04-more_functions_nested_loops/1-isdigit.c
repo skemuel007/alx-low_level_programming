@@ -4,7 +4,7 @@
  * _isdigit - Name of the function
  * @c: takes an integer argument
  * Description: Checks if a character is a digit or not
- * Returns: Returns 1 if character is a digit or 0 if otherwise
+ * Return: Returns 1 if character is a digit or 0 if otherwise
  */
 int _isdigit(int c)
 {
