@@ -46,8 +46,8 @@ void max_prime_factor(long int num)
 	}
 
 	if (num > 2)
-		largest = num;
-	printf("%d\n", largest);
+		max_number = num;
+	printf("%d\n", max_number);
 }
 
 /**
