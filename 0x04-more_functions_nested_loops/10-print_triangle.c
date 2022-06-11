@@ -14,20 +14,22 @@ void print_triangle(int size)
 	{
 		space = size - 1;
 
-		int count = 0;
-
 		for (i = 1; i <= size; i++)
 		{
-			if (count >= space)
-				_putchar('#');
-			else
-				_putchar(32);
-			count++;
-		}
-		space--;
+			int count = 0;
 
-		if (i != size)
-			_putchar('\n');
+			for (j = 1; j < = size; j++)
+			{
+				if (count >= space)
+					_putchar('#');
+				else
+					_putchar(32);
+				count++;
+			}
+			space--;
+			if (i != size)
+				_putchar('\n');
+		}
 	}
 	else
 	{
