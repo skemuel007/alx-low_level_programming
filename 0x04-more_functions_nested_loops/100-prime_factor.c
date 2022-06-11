@@ -11,7 +11,7 @@ int main(void)
 	long a, maxv;
 	long number = 612852475143;
 	double square = sqrt(number);
-	
+
 	for (a = 1; a <= square; a++)
 	{
 		if (number % a == 0)
@@ -19,7 +19,7 @@ int main(void)
 			maxv = number / a;
 		}
 	}
-	
+
 	printf("%ld\n", maxv);
 
 	return (0);
