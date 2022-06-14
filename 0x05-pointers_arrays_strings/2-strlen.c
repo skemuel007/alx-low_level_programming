@@ -1,6 +1,3 @@
-#include "main.h"
-#include <string.h>
-
 /**
  * _strlen - Function name
  * @s: argument of type char
