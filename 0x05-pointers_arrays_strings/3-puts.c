@@ -9,10 +9,11 @@
 */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int counter;
+
+	for (counter = 0; *str != '\0'; counter++)
 	{
 		_putchar(*str + 0);
-		++str;
 	}
 	_putchar('\n');
 }
