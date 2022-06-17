@@ -2,7 +2,7 @@
 
 /**
  * leet - Function name
- * @c: pointer of type char
+ * @s: pointer of type char
  * Description: Encodes letters encountered
  * Return: Encoded string
  */
