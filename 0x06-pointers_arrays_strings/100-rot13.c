@@ -21,16 +21,16 @@ char *rot13(char *s)
 		'x', 'y', 'z', 'a', 'b', 'c',
 		'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'};
 
-	while (str[++i])
+	while (s[++i])
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (str[i] == alphabet[j])
+			if (s[i] == alphabet[j])
 			{
-				str[i] = rot13key[j];
+				s[i] = rot13key[j];
 				break;
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
