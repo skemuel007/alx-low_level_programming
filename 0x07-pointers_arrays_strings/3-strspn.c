@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - gets the leng of a prefix substring and
+ * _strspn - gets the length of a prefix substring and
  * returns the number of bytes in the initial
  * segement of s which consit only of byte from accept
  * @s: pointer of type char
