@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
-	mul = i * j;
-	printf("%d\n", mul);
+	multi = i * j;
+	printf("%d\n", multi);
 
 	return (0);
 }
