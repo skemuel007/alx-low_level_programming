@@ -4,7 +4,7 @@
  *main - Entry point for compiler
  *@argc: number of arguments
  *@argv: array of arguments
- *Return: Success 
+ *Return: Success
  */
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
