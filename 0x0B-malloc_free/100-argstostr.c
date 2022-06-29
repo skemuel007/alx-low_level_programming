@@ -1,105 +1,55 @@
 #include "main.h"
 
 /**
- * _strlen - find length of a string
- * @s: string
- * Return: int
+ *argstostr - function name
+ *@ac: first param of type int
+ *@av: 2nd param of type char
+ *Return: returns a char
  */
-int _strlen(char *s)
+char *argstostr(int ac, char **av)
 {
-	int size = 0;
-	for (; s[size] != '\0'; size++)
-		;
-	return (size);
-}
-
-/**
- *str_concat - joins two strings
- *@s1: param of type string
- *@s2: param of type string
- *Return: pointer
- */
-char *str_addChar (char *str, char c)
-{
-	int size, i;
-	char *m;
-
-	size = _strlen(str);
-
-	m = malloc((size + 1) * sizeof(char) + 1);
-	if (m == 0)
-		return (0);
-
-	for (i = 0; i <= size; i++)
-		m[i] = str[i];
-
-	m[i + 1] = c;
-	m[i + 2] = '\0';
-
-	return (m);
-}
-
-/**
- *nbr_spaces - return the number of occurent of a string
- *@s: string to check
- *Return: type of int
- */
-
-unsigned int nbr_spaces(char *s)
-{
-	int i, cmpt = 0;
-
-	for (i = 0; s[i + 1] != '\0'; i++)
-	{
-		if (s[i]  == ' ' && s[i + 1] != ' ')
-			cmpt++;
-	}
-	return (cmpt + 1);
-}
-
-/**
- *strtow - split a sentence into multiple words.
- *@str: the string passed as argument.
- *Return: char pointer
- */
-char **strtow(char *str)
-{
-	int i;
-	char **tokens = NULL;
-	char *token;
-	int checkingSpace = 0;
-	int word = 0;
-
-	if (!tokens)
-	{
-		printf("Failed");
-		return (0);
-	}
-
-	printf("looping");
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		if (str[i] == ' ')
-		{
-			if (checkingSpace == 0)
-			{
-				word++;
-				checkingSpace = 1;
-			}
-		}
-		else
-		{
-			printf("1");
-			token = tokens[word];
-			free(tokens[word]);
-			str_addChar(token, str[i]);
-			checkingSpace = 0;
-		}
-	}
-
-	tokens[i] = NULL;
+	char *new_string = NULL;
+	nt k = 0, i = ac, j, sum = 0, temp = 0;
 	
-	return (tokens);
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	
+	while (ac--)
+		sum += (len(av[ac]) + 1);
+	new_string = (char *) malloc(sum + 1);
+
+	if (new_string != NULL)
+	{
+		while (k < i)
+		{
+			for (j = 0; av[k][j] != '\0'; j++)
+				new_string[j + temp] = av[k][j];
+			new_string[temp + j] = '\n';
+			temp += (j + 1);
+			k++;
+		}
+		new_string[temp] = '\0';
+	}
+	else
+	{
+		return (NULL);
+	}
+	return (new_string);
 }
 
+/**
+ * len - gets the length of a string
+ *@str: string counnted
+ *Return: length of string
+ */
+int len(char *str)
+{
+	int len = 0;
+	
+	if (str != NULL)
+	{
+		while (str[len])
+			len++;
+	}
+	return (len);
+}
