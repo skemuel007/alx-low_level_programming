@@ -9,11 +9,11 @@
 char *argstostr(int ac, char **av)
 {
 	char *new_string = NULL;
-	nt k = 0, i = ac, j, sum = 0, temp = 0;
-	
+	int k = 0, i = ac, j, sum = 0, temp = 0;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	
+
 	while (ac--)
 		sum += (len(av[ac]) + 1);
 	new_string = (char *) malloc(sum + 1);
@@ -45,7 +45,7 @@ char *argstostr(int ac, char **av)
 int len(char *str)
 {
 	int len = 0;
-	
+
 	if (str != NULL)
 	{
 		while (str[len])
